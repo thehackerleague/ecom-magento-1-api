@@ -1,0 +1,1450 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MAGENTO API",
+		"_postman_id": "656a8782-bd36-4d6f-97b2-1a6ffaae3d9c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"description": "",
+			"item": [
+				{
+					"name": "View",
+					"request": {
+						"url": "{{url}}/api/me/account?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "{{url}}/api/me/account/update",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\":\"Sunel\",\n    \"lastname\":\"Tr\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Password",
+					"request": {
+						"url": "{{url}}/api/me/password/update",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\":\"123456\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Address",
+			"description": "",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"url": "{{url}}/api/me/address?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"country_id\":\"IN\",\n    \"postcode\":\"123456\",\n    \"city\":\"Chennai\",\n    \"telephone\":\"123456789\",\n    \"fax\":\"123456\",\n    \"company\":\"Cool\",\n    \"street\":\"7th Street\",\n    \"is_default_billing\":\"1\",\n    \"is_default_shipping\":\"1\",\n    \"save_in_address_book\":\"1\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"url": "{{url}}/api/me/address",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"country_id\":\"IN\",\n    \"postcode\":\"123456\",\n    \"city\":\"Chennai\",\n    \"telephone\":\"123456789\",\n    \"fax\":\"123456\",\n    \"company\":\"Cool\",\n    \"street\":\"7th Street\",\n    \"is_default_billing\":\"1\",\n    \"is_default_shipping\":\"1\",\n    \"save_in_address_book\":\"1\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "View",
+					"request": {
+						"url": "{{url}}/api/me/address/96?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"country_id\":\"IN\",\n    \"postcode\":\"123456\",\n    \"city\":\"Chennai\",\n    \"telephone\":\"123456789\",\n    \"fax\":\"123456\",\n    \"company\":\"Cool\",\n    \"street\":\"7th Street\",\n    \"is_default_billing\":\"1\",\n    \"is_default_shipping\":\"1\",\n    \"save_in_address_book\":\"1\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "{{url}}/api/me/address/94/update",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"country_id\":\"IN\",\n    \"postcode\":\"123456\",\n    \"city\":\"Chennai\",\n    \"telephone\":\"123456789\",\n    \"fax\":\"123456\",\n    \"company\":\"Cool\",\n    \"street\":\"7th Street\",\n    \"is_default_billing\":\"1\",\n    \"is_default_shipping\":\"1\",\n    \"save_in_address_book\":\"1\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"url": "{{url}}/api/me/address/96?store=default",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"description": "",
+			"item": [
+				{
+					"name": "Authenticate",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"auth_token\", jsonData.data.token);"
+							}
+						}
+					],
+					"request": {
+						"url": "{{url}}/api/auth/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"sunelbe@gmail.com\",\n    \"password\":\"123456\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"url": "{{url}}/api/auth/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\":\"Sunel\",\n    \"lastname\":\"Tr\",\n    \"email\":\"sunelbe@gmail.com\",\n    \"password\":\"123456\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"description": "",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"url": "{{url}}/api/cart?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"quote_token\", jsonData.data.token);"
+							}
+						}
+					],
+					"request": {
+						"url": "{{url}}/api/cart",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"product\":\"391\",\n    \"qty\":1,\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add to Quote",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"quote_token\", jsonData.data.token);"
+							}
+						}
+					],
+					"request": {
+						"url": "{{url}}/api/cart",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"product\":\"391\",\n    \"qty\":1,\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Item",
+					"request": {
+						"url": "{{url}}/api/cart/item/2497",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "{{url}}/api/cart/update",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart\": {\n    \t\"2495\":{\n    \t\t\"qty\" : 3\n    \t}\n    },\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Empty",
+					"request": {
+						"url": "{{url}}/api/cart/clear",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add Coupon",
+					"request": {
+						"url": "{{url}}/api/cart/coupon",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"coupon\":\"ALL15\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Coupon",
+					"request": {
+						"url": "{{url}}/api/cart/coupon",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"description": "",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"url": "{{url}}/api/categories?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjI0NUREOEZGQzM2OThGODMxQzdCNTM5OUY5NUFBIn0.eyJqdGkiOiIyNDVERDhGRkMzNjk4RjgzMUM3QjUzOTlGOTVBQSIsImlhdCI6MTQ3MjI4NTQ3MSwicGF5bG9hZCI6eyJkZXZpY2VfdHlwZSI6IkFuZHJpb2QiLCJkZXZpY2VfdG9rZW4iOiJBUEE5MWJId181VWM3Ukc2Z3VvMEVxelBQdDI5RWh3dnlBaUc5Y3dIRzJlUkI1U0R0Z2JqLXdpRnF5YTl2ZVBCNElzQWFGQlRzZnhkcGJRd2xSNEp2Wl9abHZoMlNOZUNZTmhyeHBKOUlCaWxjSF9hdFlZTkVNMHJKd3IzTWZneS1FWVZ0ZjRXSzlSUCJ9fQ.TCuBRAv2DAQHxvZDOZdQMZ6ZDJH8KpVNtEPyMw8LPbI",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Products List",
+					"request": {
+						"url": "{{url}}/api/categories/11/products?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjI0NUREOEZGQzM2OThGODMxQzdCNTM5OUY5NUFBIn0.eyJqdGkiOiIyNDVERDhGRkMzNjk4RjgzMUM3QjUzOTlGOTVBQSIsImlhdCI6MTQ3MjI4NTQ3MSwicGF5bG9hZCI6eyJkZXZpY2VfdHlwZSI6IkFuZHJpb2QiLCJkZXZpY2VfdG9rZW4iOiJBUEE5MWJId181VWM3Ukc2Z3VvMEVxelBQdDI5RWh3dnlBaUc5Y3dIRzJlUkI1U0R0Z2JqLXdpRnF5YTl2ZVBCNElzQWFGQlRzZnhkcGJRd2xSNEp2Wl9abHZoMlNOZUNZTmhyeHBKOUlCaWxjSF9hdFlZTkVNMHJKd3IzTWZneS1FWVZ0ZjRXSzlSUCJ9fQ.TCuBRAv2DAQHxvZDOZdQMZ6ZDJH8KpVNtEPyMw8LPbI",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Filters",
+					"request": {
+						"url": "{{url}}/api/categories/11/products/filters?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjI0NUREOEZGQzM2OThGODMxQzdCNTM5OUY5NUFBIn0.eyJqdGkiOiIyNDVERDhGRkMzNjk4RjgzMUM3QjUzOTlGOTVBQSIsImlhdCI6MTQ3MjI4NTQ3MSwicGF5bG9hZCI6eyJkZXZpY2VfdHlwZSI6IkFuZHJpb2QiLCJkZXZpY2VfdG9rZW4iOiJBUEE5MWJId181VWM3Ukc2Z3VvMEVxelBQdDI5RWh3dnlBaUc5Y3dIRzJlUkI1U0R0Z2JqLXdpRnF5YTl2ZVBCNElzQWFGQlRzZnhkcGJRd2xSNEp2Wl9abHZoMlNOZUNZTmhyeHBKOUlCaWxjSF9hdFlZTkVNMHJKd3IzTWZneS1FWVZ0ZjRXSzlSUCJ9fQ.TCuBRAv2DAQHxvZDOZdQMZ6ZDJH8KpVNtEPyMw8LPbI",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Checkout",
+			"description": "",
+			"item": [
+				{
+					"name": "Init",
+					"request": {
+						"url": "{{url}}/api/checkout/init",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Guest",
+					"request": {
+						"url": "{{url}}/api/checkout/guest",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"sunelbe@gmail.com\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Set Billing",
+					"request": {
+						"url": "{{url}}/api/checkout/billing",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"billing_address_id\":null,\n\t\"billing\": {\n\t\t\"firstname\":\"Sunel\",\n\t\t\"lastname\":\"Tr\",\n\t\t\"company\":\"THL\",\n\t\t\"email\":\"sunelbe@gmail.com\",\n\t\t\"street\": [\n\t\t\t\"19/748 8B8, ATHIKARI VAYAL\",\n\t\t\t\"CEVIDIPETTAI, GUDALUR, THE NILGIRIS, 643212, TAMIL NADU, INDIA\"\n\t\t],\n\t\t\"city\":\"GUDALUR\",\n\t\t\"region_id\":\"\",\n\t\t\"region\":\"TAMIL NADU\",\n\t\t\"postcode\":\"643212\",\n\t\t\"country_id\":\"IN\",\n\t\t\"telephone\":\"9003700214\",\n\t\t\"fax\":\"9003700214\",\n\t\t\"save_in_address_book\":1,\n\t\t\"use_for_shipping\":1\n\t},\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Set Shipping",
+					"request": {
+						"url": "{{url}}/api/checkout/shipping",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"shipping_address_id\":null,\n\t\"shipping\": {\n\t\t\"firstname\":\"Sunel\",\n\t\t\"lastname\":\"Tr\",\n\t\t\"company\":\"THL\",\n\t\t\"email\":\"sunelbe@gmail.com\",\n\t\t\"street\": [\n\t\t\t\"19/748 8B8, ATHIKARI VAYAL\",\n\t\t\t\"CEVIDIPETTAI, GUDALUR, THE NILGIRIS, 643212, TAMIL NADU, INDIA\"\n\t\t],\n\t\t\"city\":\"GUDALUR\",\n\t\t\"region_id\":\"\",\n\t\t\"region\":\"TAMIL NADU\",\n\t\t\"postcode\":\"643212\",\n\t\t\"country_id\":\"IN\",\n\t\t\"telephone\":\"9003700214\",\n\t\t\"fax\":\"9003700214\",\n\t\t\"save_in_address_book\":1,\n\t\t\"same_as_billing\":1\n\t},\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Shipping Methods",
+					"request": {
+						"url": "{{url}}/api/checkout/shipping/method?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"shipping_method\":\"flatrate_flatrate\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Set Shipping Method",
+					"request": {
+						"url": "{{url}}/api/checkout/shipping/method",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"shipping_method\":\"flatrate_flatrate\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Payement Methods",
+					"request": {
+						"url": "{{url}}/api/checkout/payment/method?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"shipping_method\":\"flatrate_flatrate\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Set Payement Method",
+					"request": {
+						"url": "{{url}}/api/checkout/payment/method",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"payment\":{\n\t\t\"method\":\"cashondelivery\"\n\t},\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"quote_token\", jsonData.data.token);"
+							}
+						}
+					],
+					"request": {
+						"url": "{{url}}/api/checkout/order",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"description": "",
+			"item": [
+				{
+					"name": "Guest Order",
+					"request": {
+						"url": "{{url}}/api/order/guest",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{quote_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"sunelbe@gmail.com\",\n\t\"order_id\":\"145000008\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "View Orders",
+					"request": {
+						"url": "{{url}}/api/me/order?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"description": "",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"url": "{{url}}/api/products?store=default&limit=10&page=1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjI0NUREOEZGQzM2OThGODMxQzdCNTM5OUY5NUFBIn0.eyJqdGkiOiIyNDVERDhGRkMzNjk4RjgzMUM3QjUzOTlGOTVBQSIsImlhdCI6MTQ3MjI4NTQ3MSwicGF5bG9hZCI6eyJkZXZpY2VfdHlwZSI6IkFuZHJpb2QiLCJkZXZpY2VfdG9rZW4iOiJBUEE5MWJId181VWM3Ukc2Z3VvMEVxelBQdDI5RWh3dnlBaUc5Y3dIRzJlUkI1U0R0Z2JqLXdpRnF5YTl2ZVBCNElzQWFGQlRzZnhkcGJRd2xSNEp2Wl9abHZoMlNOZUNZTmhyeHBKOUlCaWxjSF9hdFlZTkVNMHJKd3IzTWZneS1FWVZ0ZjRXSzlSUCJ9fQ.TCuBRAv2DAQHxvZDOZdQMZ6ZDJH8KpVNtEPyMw8LPbI",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "View",
+					"request": {
+						"url": "{{url}}/api/products/406?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjI0NUREOEZGQzM2OThGODMxQzdCNTM5OUY5NUFBIn0.eyJqdGkiOiIyNDVERDhGRkMzNjk4RjgzMUM3QjUzOTlGOTVBQSIsImlhdCI6MTQ3MjI4NTQ3MSwicGF5bG9hZCI6eyJkZXZpY2VfdHlwZSI6IkFuZHJpb2QiLCJkZXZpY2VfdG9rZW4iOiJBUEE5MWJId181VWM3Ukc2Z3VvMEVxelBQdDI5RWh3dnlBaUc5Y3dIRzJlUkI1U0R0Z2JqLXdpRnF5YTl2ZVBCNElzQWFGQlRzZnhkcGJRd2xSNEp2Wl9abHZoMlNOZUNZTmhyeHBKOUlCaWxjSF9hdFlZTkVNMHJKd3IzTWZneS1FWVZ0ZjRXSzlSUCJ9fQ.TCuBRAv2DAQHxvZDOZdQMZ6ZDJH8KpVNtEPyMw8LPbI",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Filters",
+					"request": {
+						"url": "{{url}}/api/products/filters?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjI0NUREOEZGQzM2OThGODMxQzdCNTM5OUY5NUFBIn0.eyJqdGkiOiIyNDVERDhGRkMzNjk4RjgzMUM3QjUzOTlGOTVBQSIsImlhdCI6MTQ3MjI4NTQ3MSwicGF5bG9hZCI6eyJkZXZpY2VfdHlwZSI6IkFuZHJpb2QiLCJkZXZpY2VfdG9rZW4iOiJBUEE5MWJId181VWM3Ukc2Z3VvMEVxelBQdDI5RWh3dnlBaUc5Y3dIRzJlUkI1U0R0Z2JqLXdpRnF5YTl2ZVBCNElzQWFGQlRzZnhkcGJRd2xSNEp2Wl9abHZoMlNOZUNZTmhyeHBKOUlCaWxjSF9hdFlZTkVNMHJKd3IzTWZneS1FWVZ0ZjRXSzlSUCJ9fQ.TCuBRAv2DAQHxvZDOZdQMZ6ZDJH8KpVNtEPyMw8LPbI",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"url": "{{url}}/api/products?store=default&limit=10&q=top",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjI0NUREOEZGQzM2OThGODMxQzdCNTM5OUY5NUFBIn0.eyJqdGkiOiIyNDVERDhGRkMzNjk4RjgzMUM3QjUzOTlGOTVBQSIsImlhdCI6MTQ3MjI4NTQ3MSwicGF5bG9hZCI6eyJkZXZpY2VfdHlwZSI6IkFuZHJpb2QiLCJkZXZpY2VfdG9rZW4iOiJBUEE5MWJId181VWM3Ukc2Z3VvMEVxelBQdDI5RWh3dnlBaUc5Y3dIRzJlUkI1U0R0Z2JqLXdpRnF5YTl2ZVBCNElzQWFGQlRzZnhkcGJRd2xSNEp2Wl9abHZoMlNOZUNZTmhyeHBKOUlCaWxjSF9hdFlZTkVNMHJKd3IzTWZneS1FWVZ0ZjRXSzlSUCJ9fQ.TCuBRAv2DAQHxvZDOZdQMZ6ZDJH8KpVNtEPyMw8LPbI",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Whislist",
+			"description": "",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"url": "{{url}}/api/me/whislist?store=default",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"country_id\":\"IN\",\n    \"postcode\":\"123456\",\n    \"city\":\"Chennai\",\n    \"telephone\":\"123456789\",\n    \"fax\":\"123456\",\n    \"company\":\"Cool\",\n    \"street\":\"7th Street\",\n    \"is_default_billing\":\"1\",\n    \"is_default_shipping\":\"1\",\n    \"save_in_address_book\":\"1\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"url": "{{url}}/api/me/whislist",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"product_id\":\"391\",\n    \"store\":\"default\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"url": "{{url}}/api/me/whislist/391/remove?store=default",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.sample.v1+json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Token Gen",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", jsonData.token);"
+					}
+				}
+			],
+			"request": {
+				"url": "{{url}}/api/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.sample.v1+json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\",\n    \"store\":\"default\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Stores list",
+			"request": {
+				"url": "{{url}}/api/stores",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.sample.v1+json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Country list",
+			"request": {
+				"url": "{{url}}/api/country/list?store=default",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.sample.v1+json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjI0NUREOEZGQzM2OThGODMxQzdCNTM5OUY5NUFBIn0.eyJqdGkiOiIyNDVERDhGRkMzNjk4RjgzMUM3QjUzOTlGOTVBQSIsImlhdCI6MTQ3MjI4NTQ3MSwicGF5bG9hZCI6eyJkZXZpY2VfdHlwZSI6IkFuZHJpb2QiLCJkZXZpY2VfdG9rZW4iOiJBUEE5MWJId181VWM3Ukc2Z3VvMEVxelBQdDI5RWh3dnlBaUc5Y3dIRzJlUkI1U0R0Z2JqLXdpRnF5YTl2ZVBCNElzQWFGQlRzZnhkcGJRd2xSNEp2Wl9abHZoMlNOZUNZTmhyeHBKOUlCaWxjSF9hdFlZTkVNMHJKd3IzTWZneS1FWVZ0ZjRXSzlSUCJ9fQ.TCuBRAv2DAQHxvZDOZdQMZ6ZDJH8KpVNtEPyMw8LPbI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Region list",
+			"request": {
+				"url": "{{url}}/api/region/list?store=default&country_id=us",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.sample.v1+json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjI0NUREOEZGQzM2OThGODMxQzdCNTM5OUY5NUFBIn0.eyJqdGkiOiIyNDVERDhGRkMzNjk4RjgzMUM3QjUzOTlGOTVBQSIsImlhdCI6MTQ3MjI4NTQ3MSwicGF5bG9hZCI6eyJkZXZpY2VfdHlwZSI6IkFuZHJpb2QiLCJkZXZpY2VfdG9rZW4iOiJBUEE5MWJId181VWM3Ukc2Z3VvMEVxelBQdDI5RWh3dnlBaUc5Y3dIRzJlUkI1U0R0Z2JqLXdpRnF5YTl2ZVBCNElzQWFGQlRzZnhkcGJRd2xSNEp2Wl9abHZoMlNOZUNZTmhyeHBKOUlCaWxjSF9hdFlZTkVNMHJKd3IzTWZneS1FWVZ0ZjRXSzlSUCJ9fQ.TCuBRAv2DAQHxvZDOZdQMZ6ZDJH8KpVNtEPyMw8LPbI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Block View",
+			"request": {
+				"url": "{{url}}/api/block/footer_links_sm?store=default",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.sample.v1+json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjI0NUREOEZGQzM2OThGODMxQzdCNTM5OUY5NUFBIn0.eyJqdGkiOiIyNDVERDhGRkMzNjk4RjgzMUM3QjUzOTlGOTVBQSIsImlhdCI6MTQ3MjI4NTQ3MSwicGF5bG9hZCI6eyJkZXZpY2VfdHlwZSI6IkFuZHJpb2QiLCJkZXZpY2VfdG9rZW4iOiJBUEE5MWJId181VWM3Ukc2Z3VvMEVxelBQdDI5RWh3dnlBaUc5Y3dIRzJlUkI1U0R0Z2JqLXdpRnF5YTl2ZVBCNElzQWFGQlRzZnhkcGJRd2xSNEp2Wl9abHZoMlNOZUNZTmhyeHBKOUlCaWxjSF9hdFlZTkVNMHJKd3IzTWZneS1FWVZ0ZjRXSzlSUCJ9fQ.TCuBRAv2DAQHxvZDOZdQMZ6ZDJH8KpVNtEPyMw8LPbI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cms View",
+			"request": {
+				"url": "{{url}}/api/cms/company?store=default",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.sample.v1+json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjI0NUREOEZGQzM2OThGODMxQzdCNTM5OUY5NUFBIn0.eyJqdGkiOiIyNDVERDhGRkMzNjk4RjgzMUM3QjUzOTlGOTVBQSIsImlhdCI6MTQ3MjI4NTQ3MSwicGF5bG9hZCI6eyJkZXZpY2VfdHlwZSI6IkFuZHJpb2QiLCJkZXZpY2VfdG9rZW4iOiJBUEE5MWJId181VWM3Ukc2Z3VvMEVxelBQdDI5RWh3dnlBaUc5Y3dIRzJlUkI1U0R0Z2JqLXdpRnF5YTl2ZVBCNElzQWFGQlRzZnhkcGJRd2xSNEp2Wl9abHZoMlNOZUNZTmhyeHBKOUlCaWxjSF9hdFlZTkVNMHJKd3IzTWZneS1FWVZ0ZjRXSzlSUCJ9fQ.TCuBRAv2DAQHxvZDOZdQMZ6ZDJH8KpVNtEPyMw8LPbI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"device_type\":\"Andriod\",\n    \"device_token\":\"APA91bHw_5Uc7RG6guo0EqzPPt29EhwvyAiG9cwHG2eRB5SDtgbj-wiFqya9vePB4IsAaFBTsfxdpbQwlR4JvZ_Zlvh2SNeCYNhrxpJ9IBilcH_atYYNEM0rJwr3Mfgy-EYVtf4WK9RP\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
