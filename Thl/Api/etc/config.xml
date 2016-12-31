@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Thl_Api>
+			<version>0.1.0</version>
+		</Thl_Api>
+	</modules>	
+	<global>
+		<helpers>
+            <tapi>
+                <class>Thl_Api_Helper</class>
+            </tapi>
+        </helpers> 
+		<models>
+			<tapi>
+				<class>Thl_Api_Model</class>
+			</tapi>			
+		</models>
+		<api3>
+			<middlewares>
+            	<store_check>tapi/middleware_store</store_check>
+            	<quote_token>tapi/middleware_quote</quote_token>
+            </middlewares>
+            <routes>
+            	<tapi>Thl_Api</tapi>
+            </routes>
+            <prefixs>
+				<tapi>Thl_Api_Api</tapi>
+			</prefixs>
+		</api3>	
+	</global>
+</config>	

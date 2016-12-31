@@ -1,0 +1,8 @@
+<config>
+  <modules>
+    <Thl_Api>
+      <active>true</active>
+      <codePool>local</codePool>
+    </Thl_Api>
+  </modules>
+</config>
